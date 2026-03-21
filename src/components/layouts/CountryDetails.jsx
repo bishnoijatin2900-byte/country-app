@@ -67,18 +67,7 @@ export const CountryDetails = () => {
                                     <span className="card-description">Top Level Domain:</span>
                                     {country.tld[0]}
                                 </p>
-                                {/* <p>
-                  <span className="card-description"> Currencies: </span>
-                  {Object.keys(country.currencies)
-                    .map((curElem) => country.currencies[curElem].name)
-                    .join(", ")}
-                </p>
-                <p>
-                  <span className="card-description">Languages: </span>
-                  {Object.keys(country.languages)
-                    .map((key) => country.languages[key])
-                    .join(", ")}
-                </p> */}
+                   
                             </div>
                         </div>
                     </div>
