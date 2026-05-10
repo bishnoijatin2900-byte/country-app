@@ -35,7 +35,7 @@ const Country = () => {
 }
 
  const filterCountries = countries.filter((country)=> searchCountry(country) 
-&& filterRegion(country))
+   && filterRegion(country))
 
 
 

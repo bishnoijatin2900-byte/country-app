@@ -8,17 +8,17 @@ import { NavLink } from "react-router-dom";
 
 export const CountryDetails = () => {
     const params = useParams();
-    const [isPending, startTransition] = useTransition();
     const [country, setCountry] = useState();
 
     useEffect(() => {
-        startTransition(async () => {
+        const fetchData = (async () => {
             const res = await getCountryIndData(params.id);
             console.log(res);
 
             setCountry(res.data[0]);
 
         });
+        fetchData()
     }, [params.id]);
 
    if (!country) return <Loader />;
